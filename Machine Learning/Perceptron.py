@@ -24,7 +24,7 @@ class Perceptron: #init methods, set learning rate to arbitrary 0.1 later do a g
                 self.weights += error*self.lr*X[i]
                 self.bias += self.lr*error
 
-X = np.random.randint(0,2,size = (3,2)) #randint is exclusive so right bound is at 2 so you generate 0 and 1
+X = np.random.randint(0,2,size = (6,2)) #randint is exclusive so right bound is at 2 so you generate 0 and 1
 y = [] #initialise a empty list
 for amt in X:
     if amt[0] == 1 and amt[1] == 1: #because if you put a != for both then what happens is that fi you have '' or some shit like that it will classify as 0
